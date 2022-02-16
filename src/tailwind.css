@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    @apply m-0 p-0 box-border font-poppins
+}
+
+.button {
+@apply w-full text-lg font-medium px-0 py-2 outline-none border-none bg-theme rounded-lg cursor-pointer text-white transition-all duration-300 hover:scale-95
+}
+
+.details span:first-child {
+    @apply text-white
+}
+
+.playboard-square {
+    @apply block h-20 w-20 bg-white m-1 rounded-lg text-5xl text-center text-theme leading-[5rem]
+}
+
+.players{
+    @apply flex w-full justify-between relative
+}
+
+.whenActive {
+    @apply text-white bg-theme
+}
+
+.slider {
+    @apply absolute top-0 left-0 h-full w-1/2 bg-theme rounded-md z-[2] transition-all duration-300
+}
+
+.default {
+   @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+}
+
+.won-text {
+    @apply text-2xl font-medium flex justify-center
+}
+
+.won-text p {
+    @apply font-semibold mx-1 my-0
+}
+
+.btn {
+    @apply justify-center mt-5 flex 
+}
+
+.select-box.hide {
+    @apply opacity-0 pointer-events-none -translate-x-1/2 -translate-y-1/2 transition-all duration-300 scale-90
+}
+
+.play-board {
+    @apply opacity-0 pointer-events-none -translate-x-1/2 -translate-y-1/2 transition-all duration-300 scale-90
+}
+
+.play-board.show {
+    @apply opacity-[1] pointer-events-auto -translate-x-1/2 -translate-y-1/2 transition-all duration-300 scale-100
+}
+
+.result-box {
+    @apply -translate-x-1/2 -translate-y-1/2 transition-all duration-300 scale-100 opacity-0 pointer-events-none bg-white p-5 rounded-md max-w-[350px] w-full
+}
+
+.result-box.show {
+    @apply opacity-[1] pointer-events-auto -translate-x-1/2 -translate-y-1/2 transition-all duration-300 scale-100
+}
+
+.players.isActive span:first-child{
+    @apply text-theme
+}
+
+.players.isActive span:nth-child(2){
+    @apply text-white
+}
+
+.players.isActive .slider {
+    @apply left-1/2
+}
+
+.pointer {
+    @apply w-full rounded-lg py-2 px-0 text-lg font-semibold text-center cursor-default relative z-[5] transition-all duration-300
+}

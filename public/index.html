@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tic Tac Toe</title>
+</head>
+
+<body class="bg-theme">
+    <!-- Select Box -->
+    <section class="default bg-white px-6 py-5 rounded-md max-w-xs w-full select-box">
+        <header class="text-xl font-semibold pb-2 border-b-2 text-center">Tic Tac Toe</header>
+        <div class="content">
+            <h2 class="text-base font-medium mx-0 my-6 text-center">Select which you want to be?</h2>
+            <div class="flex w-full">
+                <button class="button mr-1 playerX">Player (X)</button>
+                <button class="button ml-1 playerO">Player (O)</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Playboard -->
+    <section class="default play-board">
+
+        <!-- Player HUD -->
+        <div class="details bg-white p-2 rounded-lg">
+            <div class="players">
+                <span class="Xturn pointer">X's
+                    Turn</span>
+                <span class="Oturn text-theme pointer">O's
+                    Turn</span>
+
+                <div class="slider">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Play Area -->
+        <div class="mt-10">
+            <!-- Play Grid -->
+            <div class="flex">
+                <span class="box1 playboard-square"></span>
+                <span class="box2 playboard-square"></span>
+                <span class="box3 playboard-square"></span>
+            </div>
+
+            <div class="flex">
+                <span class="box4 playboard-square"></span>
+                <span class="box5 playboard-square"></span>
+                <span class="box6 playboard-square"></span>
+            </div>
+
+            <div class="flex">
+                <span class="box7 playboard-square"></span>
+                <span class="box8 playboard-square"></span>
+                <span class="box9 playboard-square"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Result Box -->
+    <section class="result-box default">
+        <div class="won-text"></div>
+        <div class="btn">
+            <button
+                class="text-lg font-medium px-5 py-2 outline-none border-none bg-theme rounded-lg cursor-pointer text-white transition-all duration-300 hover:scale-95">
+                Replay
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="py-8 left-0 bottom-0 fixed w-full -translate-y-36">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="flex gap-10 mt-12 md:mt-0">
+                <li class="list-none"><i class="text-white text-2xl fa-brands fa-twitter"></i></li>
+                <li class="list-none"><i class="text-white text-2xl fa-brands fa-facebook-square"></i></li>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
